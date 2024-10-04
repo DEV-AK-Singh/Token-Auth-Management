@@ -4,16 +4,6 @@
 
 This project is a token-based authentication system that provides login, registration, and logout functionality using **JWT (JSON Web Tokens)** with **Express**, **EJS**, **MongoDB**, and **cookie-parser**. The system manages user authentication using JWT tokens stored in cookies.
 
-## Tech Stack
-
-- **Node.js** & **Express**: For building the server and handling routing.
-- **EJS**: For server-side rendering and templating.
-- **MongoDB**: For storing user credentials.
-- **Mongoose**: For interacting with the MongoDB database.
-- **bcrypt**: For hashing user passwords before storing them.
-- **cookie-parser**: For managing cookies that store JWT tokens.
-- **jsonwebtoken**: For creating and verifying JSON Web Tokens (JWT).
-
 ## Features
 
 1. **User Registration**:
@@ -39,6 +29,16 @@ This project is a token-based authentication system that provides login, registr
 ![alt text](previews/preview2.png)
 ![alt text](previews/preview3.png)
 ![alt text](previews/preview4.png)
+
+## Tech Stack
+
+- **Node.js** & **Express**: For building the server and handling routing.
+- **EJS**: For server-side rendering and templating.
+- **MongoDB**: For storing user credentials.
+- **Mongoose**: For interacting with the MongoDB database.
+- **bcrypt**: For hashing user passwords before storing them.
+- **cookie-parser**: For managing cookies that store JWT tokens.
+- **jsonwebtoken**: For creating and verifying JSON Web Tokens (JWT).
 
 ## Installation
 
