@@ -63,7 +63,9 @@ app.post("/register", async (req, res) => {
       password: hashedPassword,
     });
   
-    const jwt = createToken(newUser);
+    const { password:_ps , ...payload } = newUser._doc;
+
+    const jwt = createToken(payload);
     res.cookie("jwt", jwt);
     res.redirect("/");
 });
@@ -103,7 +105,9 @@ app.post("/login", async (req, res) => {
     return;
   }
 
-  const jwt = createToken(user);
+  const { password:_ps, ...payload } = user._doc;
+
+  const jwt = createToken(payload);
   res.cookie("jwt", jwt);
   res.redirect("/");
 });
